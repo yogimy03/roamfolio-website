@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RoamFolio — Travel Diary &amp; Map</title>
+  <meta name="description" content="RoamFolio draws every trip you've ever taken — flights, road trips, hikes, cruises — on a stunning interactive map. Your travel story, told in routes."/>
+  <meta name="theme-color" content="#0B1628"/>
+
+  <!-- Open Graph -->
+  <meta property="og:title"       content="RoamFolio — Travel Diary &amp; Map"/>
+  <meta property="og:description" content="Every journey, beautifully mapped. Your personal travel diary for iPhone."/>
+  <meta property="og:image"       content="assets/logo-icon.svg"/>
+  <meta property="og:type"        content="website"/>
+  <meta property="og:url"         content="https://roamfolio.life"/>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet"/>
+
+  <link rel="icon" type="image/svg+xml" href="assets/logo-icon.svg"/>
+  <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+
+<!-- ════════════════════════════════════════
+     NAV
+════════════════════════════════════════ -->
+<nav class="site-nav" role="navigation" aria-label="Main">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo" aria-label="RoamFolio home">
+      <img src="assets/logo-icon.svg" alt="RoamFolio icon" width="34" height="34"/>
+      RoamFolio
+    </a>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#features">Features</a></li>
+      <li><a href="#modes">Transport Modes</a></li>
+      <li><a href="privacy.html">Privacy</a></li>
+      <li><a href="terms.html">Terms</a></li>
+      <li>
+        <span class="btn btn-primary nav-cta" style="opacity:0.6;cursor:default">Coming Soon</span>
+      </li>
+    </ul>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ════════════════════════════════════════
+     HERO
+════════════════════════════════════════ -->
+<section class="hero" id="home">
+  <div class="container">
+    <div class="hero-inner">
+
+      <div class="hero-copy">
+        <span class="hero-eyebrow">Personal Travel Diary for iPhone</span>
+        <h1>Every journey,<br/><em>beautifully</em> mapped.</h1>
+        <p class="hero-lead">
+          RoamFolio draws each trip on a stunning interactive map — flights arc across oceans,
+          roads snake through cities, hikes trace mountain trails. Your travel story, told in routes.
+        </p>
+        <div class="hero-actions">
+          <div class="coming-soon-badge">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+            </svg>
+            Coming Soon to the App Store
+          </div>
+          <a href="#features" class="btn btn-ghost">See what it does</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-logo-wrap">
+          <img src="assets/logo-icon.svg" alt="RoamFolio — globe with flight arc" width="380" height="380"/>
+        </div>
+        <!-- Floating tags around the logo -->
+        <div class="hero-tag hero-tag--1">✈️ Flight arcs</div>
+        <div class="hero-tag hero-tag--2">🥾 GPX hikes</div>
+        <div class="hero-tag hero-tag--3">🚗 Road routes</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Scroll hint -->
+  <div class="scroll-hint" aria-hidden="true">
+    <div class="scroll-hint-arrow"></div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════
+     HOW IT WORKS
+════════════════════════════════════════ -->
+<section class="section how-section" id="how">
+  <div class="container">
+    <div class="section-header" style="text-align:center">
+      <p class="section-eyebrow">How it works</p>
+      <h2>Three steps to your travel diary</h2>
+    </div>
+
+    <div class="steps" data-stagger>
+      <div class="step">
+        <div class="step-num">1</div>
+        <h3>Create a Trip</h3>
+        <p>Name your adventure — "Japan 2025" or "Pacific Coast Road Trip." Choose a colour and emoji to identify it on the map.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <h3>Log Each Journey</h3>
+        <p>Add every leg: flight, train, road, hike, cruise. Search for origins and destinations. The app draws the route for you.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <h3>See It on the Map</h3>
+        <p>All journeys appear on one beautiful map with their real visual styles — dashed arcs for flights, winding lines for roads.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════
+     FEATURES
+════════════════════════════════════════ -->
+<section class="section features-section" id="features">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-eyebrow">Features</p>
+      <h2>Everything your travel story needs</h2>
+      <p>More than a map. A complete diary for every journey you've taken.</p>
+    </div>
+
+    <div class="features-grid" data-stagger>
+
+      <div class="feature-card">
+        <div class="feature-icon">🗺️</div>
+        <h3>8 Transport Modes</h3>
+        <p>Flight, Road, Train, Bus, Rideshare, Cruise, Hike, Walk, Cycle — each drawn on the map with its own visual style.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">📍</div>
+        <h3>Stops &amp; Waypoints</h3>
+        <p>Mark every city, landmark, or café along the route. Add notes, dates, a star rating, and a mood tag for each stop.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">📸</div>
+        <h3>Smart Photo Linking</h3>
+        <p>Link photos directly from your camera roll — no duplicates, no extra storage. Your memories stay where they are.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">🏔️</div>
+        <h3>Hike &amp; GPX Import</h3>
+        <p>Import GPX files from any GPS device or app. See your trail on the map with a beautiful elevation profile chart.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">📊</div>
+        <h3>Travel Statistics</h3>
+        <p>Total distance covered, countries visited, trips logged, and a breakdown of how you've gotten around the world.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">🔒</div>
+        <h3>Private by Design</h3>
+        <p>All data lives on your device. No accounts, no cloud upload, no ads, no tracking. Just your journeys, yours alone.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════
+     TRANSPORT MODES
+════════════════════════════════════════ -->
+<section class="section modes-section" id="modes">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-eyebrow">Transport Modes</p>
+      <h2 style="color:white">Every way you travel, visualised</h2>
+      <p>Each transport mode gets its own distinct line style on the map — so a glance tells you exactly how you got there.</p>
+    </div>
+
+    <div class="modes-grid">
+
+      <div class="mode-card fade-up">
+        <div class="mode-emoji">✈️</div>
+        <div class="mode-line"><div class="route-line route-flight"></div></div>
+        <div class="mode-name">Flight</div>
+        <div class="mode-desc">Geodesic arc across the globe. Dashed white line — the classic flight path.</div>
+      </div>
+
+      <div class="mode-card fade-up">
+        <div class="mode-emoji">🚗</div>
+        <div class="mode-line"><div class="route-line route-road"></div></div>
+        <div class="mode-name">Road</div>
+        <div class="mode-desc">Road-snapped route via Apple Maps. Solid, thick — every curve of the drive.</div>
+      </div>
+
+      <div class="mode-card fade-up">
+        <div class="mode-emoji">🚂</div>
+        <div class="mode-line"><div class="route-line route-train"></div></div>
+        <div class="mode-name">Train</div>
+        <div class="mode-desc">Solid line with perpendicular tick marks — the universal railway symbol.</div>
+      </div>
+
+      <div class="mode-card fade-up">
+        <div class="mode-emoji">🚢</div>
+        <div class="mode-line"><div class="route-line route-cruise"></div></div>
+        <div class="mode-name">Cruise</div>
+        <div class="mode-desc">Long dashes on a gentle wave path — feels exactly like the open sea.</div>
+      </div>
+
+      <div class="mode-card fade-up">
+        <div class="mode-emoji">🥾</div>
+        <div class="mode-line"><div class="route-line route-hike"></div></div>
+        <div class="mode-name">Hike</div>
+        <div class="mode-desc">Earthy thick dash from your GPX track. Trail pins mark summits and viewpoints.</div>
+      </div>
+
+      <div class="mode-card fade-up">
+        <div class="mode-emoji">🚶</div>
+        <div class="mode-line"><div class="route-line route-walk"></div></div>
+        <div class="mode-name">Walk</div>
+        <div class="mode-desc">Fine dotted line — light as a stroll, perfect for city exploring on foot.</div>
+      </div>
+
+      <div class="mode-card fade-up">
+        <div class="mode-emoji">🚴</div>
+        <div class="mode-line"><div class="route-line route-cycle"></div></div>
+        <div class="mode-name">Cycle</div>
+        <div class="mode-desc">Medium dash — energetic, purposeful. Every kilometre of pedalling, mapped.</div>
+      </div>
+
+      <div class="mode-card fade-up">
+        <div class="mode-emoji">🚌</div>
+        <div class="mode-line"><div class="route-line route-bus"></div></div>
+        <div class="mode-name">Bus &amp; Rideshare</div>
+        <div class="mode-desc">Long dashes for bus, short dashes for rideshare. Road-snapped, always accurate.</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════
+     CTA
+════════════════════════════════════════ -->
+<section class="section cta-section">
+  <div class="container" style="position:relative;z-index:1;text-align:center">
+    <span class="hero-eyebrow" style="margin-bottom:24px;display:inline-block">Coming Soon · iPhone</span>
+    <h2>Start mapping your world.</h2>
+    <p style="max-width:52ch;margin:0 auto 36px">
+      RoamFolio is in development and will be available on the App Store soon.
+      All data stays on your device. No account, no subscription, no tracking.
+    </p>
+    <div class="cta-coming-soon">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="rgba(255,255,255,0.5)" aria-hidden="true">
+        <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+      </svg>
+      Available on the App Store — coming soon
+    </div>
+    <p style="margin-top:20px;font-size:0.82rem;color:rgba(255,255,255,0.38)">
+      iOS 26+ &nbsp;·&nbsp; iPhone only &nbsp;·&nbsp; Free
+    </p>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-inner">
+      <a href="/" class="footer-logo">
+        <img src="assets/logo-icon.svg" alt="" width="28" height="28"/>
+        RoamFolio
+      </a>
+
+      <ul class="footer-links">
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms of Service</a></li>
+      </ul>
+
+      <p class="footer-copy">© 2026 RoamFolio. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>
