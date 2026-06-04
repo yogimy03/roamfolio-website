@@ -7,24 +7,25 @@
   <meta name="description" content="RoamFolio Terms of Service."/>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet"/>
   <link rel="icon" type="image/svg+xml" href="assets/logo-icon.svg"/>
   <link rel="stylesheet" href="css/styles.css"/>
 </head>
 <body>
 
-<nav class="site-nav scrolled" role="navigation">
+<nav class="site-nav scrolled" role="navigation" aria-label="Main">
   <div class="nav-inner">
-    <a href="index.html" class="nav-logo">
-      <img src="assets/logo-icon.svg" alt="RoamFolio" width="34" height="34"/>
-      RoamFolio
+    <a href="index.html" class="nav-logo" aria-label="RoamFolio home">
+      <img src="assets/logo-icon.svg" alt="RoamFolio" width="28" height="28"/>
+      <span>RoamFolio</span>
     </a>
     <ul class="nav-links">
       <li><a href="index.html#features">Features</a></li>
+      <li><a href="index.html#modes">Transport</a></li>
       <li><a href="privacy.html">Privacy</a></li>
-      <li><span class="btn btn-primary nav-cta" style="opacity:0.6;cursor:default">Coming Soon</span></li>
+      <li><span class="nav-badge">Coming Soon</span></li>
     </ul>
-    <button class="nav-toggle" aria-label="Open menu">
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
   </div>
